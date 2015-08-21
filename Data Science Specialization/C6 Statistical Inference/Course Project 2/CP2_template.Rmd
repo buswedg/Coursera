@@ -1,0 +1,82 @@
+---
+output:
+  pdf_document:
+    keep_tex: yes
+  html_document:
+    keep_md: yes
+---
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(fig.width = 12, fig.height = 8, fig.path = 'figure/',
+                      echo = TRUE, warning = FALSE, message = FALSE)
+```
+#Statistical Inference
+###Course Project 2: CP2_template
+
+
+###Introduction
+This document presents the results of the Course Project for the Coursera course: Statistical Inference. This assessment makes use of statistical techniques in order to explore the relationship between the tooth size of guinea pigs and vitamin dosage levels.
+
+
+###Data
+This assignment makes use of the 'toothgrowth' data set. The data set consists of measurements of length of guinea pigs teeth. It also states that there are two delivery methods of Vitamin C, orange juice (OJ) and ascorbic acid (VC). They were administered with three dose levels of 0.5, 1, and 2 mg.
+
+* Dataset: [toothgrowth data](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/ToothGrowth.html)
+
+It consists of 60 observations on 3 variables.
+
+
+###1. Load Packages/Data
+```{r}
+for (package in c('ggplot2', 'plyr')) {
+ 
+    if (!require(package, character.only = TRUE, quietly = FALSE)) {
+        install.packages(package)
+        library(package, character.only = TRUE)
+    }
+}
+
+data(ToothGrowth)
+data_tooth <- ToothGrowth
+```
+
+
+###2. Exploratory Data Analysis
+Show data summary:
+```{r}
+summary(data_tooth)
+```
+
+Check recorded tooth legnth against dosage level:
+```{r}
+ggplot(data_tooth, aes(x = dose, y = len)) + 
+  geom_point(size = 3, colour = "blue") +
+  ggtitle('Figure 1: Avg. Tooth Length vs. Dosage Level')
+```
+The plot suggests a positive correlation between recorded tooth length and dosage level.
+
+
+###3. Confidence Interval Analysis
+Use confidence intervals and hypothesis tests to compare tooth growth by supplement type and dose level:
+```{r}
+ddply(data_tooth, dose ~ supp, function(x) 
+  c(mean = mean(x$len),
+  sd = sd(x$len),
+  conf.int = t.test(x$len)$conf.int))
+```
+It is observed that the 'VC'  intervals are pairwise disjoint (95% confidence level). As such, tooth length means are taken as distinct and a positive correlation between recorded tooth length and dosage level is again observed.
+
+The 'OJ' intervals however, are overlapped between the 1.0 and 2.0 dosage levels. Therefore, explicit tests for these dosages are performed:
+```{r}
+val_ttest1 <- t.test(len ~ dose, paired = FALSE, var.equal = TRUE, data = subset(data_tooth, dose %in% c(1.0, 2.0) & supp == 'OJ'))
+val_ttest2 <- t.test(len ~ supp, paired = FALSE, var.equal = FALSE, data = subset(data_tooth, dose == 2.0))
+
+data.frame(row.names = c("'1.0 OJ dose' vs '2.0 OJ dose'", "'2.0 OJ dose' vs '2.0 VC dose'"),
+  "p-value" = c(val_ttest1$p.value, val_ttest2$p.value),
+  "Conf-Low" = c(val_ttest1$conf[1], val_ttest2$conf[1]),
+  "Conf-High" = c(val_ttest1$conf[2], val_ttest2$conf[2]))
+```
+For 'OJ', it is observed that the mean length for a 1.0 dosage level is greater than the mean length for a 2.0 dosage level (p-value = 0.037). For the 2.0 dosage level however, it is observed that the difference between type of supplement is insignificant (p-vale = 0.964).
+
+
+###4. Conclusion
+Analysis has shown positive correlation between dosage levels and the tooth size of guinea pigs. For lower level dosages (0.5mg and 1.0mg), Orange Juice supplement has an advantage over the Vitamin C supplement. However for the 2.0mg dosage level there is no significant difference between the type of supplement used.

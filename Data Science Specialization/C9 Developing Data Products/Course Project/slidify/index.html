@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Coursera Developing Data Products</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Coursera Developing Data Products">
+  <meta name="author" content="Darryl Buswell (www.github.com/buswedg)">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Coursera Developing Data Products</h1>
+    <h2>Reproducible Pitch Presentation</h2>
+    <p>Darryl Buswell (www.github.com/buswedg)<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h1>Some Background</h1>
+  </hgroup>
+  <article data-timings="">
+    <hr>
+
+<h3>What&#39;s exploratory data analysis?</h3>
+
+<p>Exploratory data analysis involves summarizing and analyzing data at a high level, often using visual methods. When employed correctly, it is able to give the analyst a &#39;sense&#39; of the data characteristics and relationships, improving flow-on analysis throughout the data analysis pipeline.</p></p>
+
+<h3>What&#39;s the problem?</h3>
+
+<p>Exploratory analysis doesn&#39;t generate the same sort of titillation as other methods in the data scientist&#39;s toolbox (looking at you machine learning). It is often viewed as a tedious exercise that is low-value add.</p>
+
+<h3>What&#39;s the solution?</h3>
+
+<p>Cut down on the manual effort involved for exploratory analysis with a web application which can import raw datasets and automate the charting process...</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h1>The Web Application</h1>
+  </hgroup>
+  <article data-timings="">
+    <hr>
+
+<h3>What&#39;s working in the background?</h3>
+
+<p>The web application will provide an interactive environment for basic exploratory data analysis. A user interface will be built leveraging R and Shiny, and hosted via the SaaS platform from RStudio shinyapss.io.</p>
+
+<h3>What&#39;s customizable?</h3>
+
+<p>Dynamic chart elements include the type of chart (e.g. histrogram, scatter etc.), varible sample size, which dataset fields are to be assigned to each axis, and finally, which dataset field is to be used to categorise displayed data.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <article data-timings="">
+    <p>The web application will leverage ggplot2 for charting. Code for a static view of the default plot rendered by the current version of the web application:</p>
+
+<pre><code class="r">ggplot(dataset, aes(x = Age, fill = as.character(Survived))) + guides(fill = FALSE) + geom_histogram()
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h1>What Next?</h1>
+  </hgroup>
+  <article data-timings="">
+    <hr>
+
+<ul>
+<li>The appplication is hosted via the SaaS platform from RStudio shinyapss.io and can be accessed here: <a href="https://buswedg.shinyapps.io/DDPCP1">Shiny page</a>. Note that the current version of the application leverages a static dataset obtained from the Kaggle Titanic Challenge.</li>
+</ul>
+
+<p><br></p>
+
+<ul>
+<li>Raw version of the associated project files and pitch presentation can be found on my GitHub page here: <a href="http://www.github.com/buswedg">Github page</a></li>
+</ul>
+
+<p><br></p>
+
+<ul>
+<li>More information on the Kaggle Titanic Challenge can be found here: <a href="https://www.kaggle.com/c/titanic">Kaggle page</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Some Background'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Web Application'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='NA'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='What Next?'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

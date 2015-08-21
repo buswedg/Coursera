@@ -1,0 +1,184 @@
+---
+output:
+  html_document:
+    keep_md: yes
+  pdf_document:
+    keep_tex: yes
+---
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(fig.width = 12, fig.height = 8, fig.path = 'figure/',
+                      echo = TRUE, warning = FALSE, message = FALSE)
+```
+#Regression Models
+###Peer Assessment 1: PA1_template
+
+
+###Introduction
+This document presents the results of Peer Assessment 1 for the Coursera course: Regression Models. This assessment required analysis on a data set of a collection of cars. In particular, exploring the relationship between a set of variables and miles per gallon.
+
+
+###Data
+This assignment makes use of the 'mtcars' data set. The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models). 
+
+* Dataset: [mtcars data](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/mtcars.html)
+
+It consists of 32 observations on 11 variables:
+
+* `mpg`: Miles per US gallon
+* `cyl`: Number of cylinders
+* `disp`: Displacement (cubic inches)
+* `hp`: Gross horsepower
+* `drat`: Rear axle ratio
+* `wt`: Weight (lb / 1000)
+* `qsec`: 1 / 4 mile time
+* `vs`: V/S
+* `am`: Transmission (0 = automatic, 1 = manual)
+* `gear`: Number of forward gears
+* `carb`: Number of carburetors
+
+ 
+###1. Loading Data/Packages
+```{r}
+for (package in c('ggplot2', 'stats', 'graphics', 'GGally', 'caret', 'reshape2')) {
+  
+    if (!require(package, character.only = TRUE, quietly = FALSE)) {
+        install.packages(package)
+        library(package, character.only = TRUE)
+    }
+}
+
+data(mtcars)
+data_mtcars <- mtcars
+```
+
+
+###2. Subset and Plot Relevant Data:
+```{r}
+data_mpgtrans <- data.frame(
+  mpg = data_mtcars[, 1],
+  cyl = data_mtcars[, 2],
+  disp = data_mtcars[, 3],
+  hp = data_mtcars[, 4],
+  drat = data_mtcars[, 5],
+  wt = data_mtcars[, 6],
+  qsec = data_mtcars[, 7],
+  vs = data_mtcars[, 8],
+  am = factor(data_mtcars[, 9], labels = c("Automatic", "Manual")),
+  gear = data_mtcars[, 10],
+  carb = data_mtcars[, 11])
+```
+
+
+###3. Exploratory Data Analysis:
+The appendix contains figures used for basic exploratory data analysis.
+
+Figure 1 shows pair relationships between each variable categorised by 'am'. At a high level, the pair relationships suggest correlation between many of the dataset variables. 'mpg' in particular seems to have a strong correlation with variables 'cyl', 'disp', 'hp' and 'wt'. Figure 2 shows a histogram of 'mpg' also categorised by 'am'. No outliers are identified, however the distribution does seem to exhibit a slight positive skew. Finally, figure 3 shows a boxplot between 'mpg' and 'am'. This figure suggests manual cars achieve greater mpg than automatic cars.
+
+
+###4. Statistical Inference:
+####Test null hypothesis that there is no difference between automatic and manual cars in terms of mpg:
+```{r, echo = FALSE}
+data_mpgtrans.at <- data_mpgtrans[data_mpgtrans$am == "Automatic",]$mpg
+data_mpgtrans.mt <- data_mpgtrans[data_mpgtrans$am == "Manual",]$mpg
+
+t.test(data_mpgtrans.at, data_mpgtrans.mt)
+```
+Based on the reported p-value and using 0.05 as the criteria, the null hypothesis should be rejected. This suggests a statistical significant difference between automatic car and manual car in terms of achieved mpg.
+
+
+###5. Model Selection:
+####Create models with various selection method and criteria:
+```{r, echo = FALSE, results = 'hide'}
+val_model1 <- train(mpg~am, data_mtcars, method = "lm")
+val_model2 <- train(mpg~., data_mtcars[-12], method = "lmStepAIC", direction = "backward")
+val_model3 <- train(mpg~., data_mtcars[-12], method = "lmStepAIC", direction = "forward")
+```
+Several linear regression models are built, each using 'mpg' as the dependent variable.
+
+####Model 1: Linear model to explain mpg as a function of transmission type.
+```{r, echo = FALSE}
+summary(val_model1)
+```
+Model shows significant coefficient for 'am' explanatory variable (p <= 0.05), however model has a low R-square value.
+
+
+####Model 2: Searched linear model using lmStepAIC method, backward direction.
+```{r, echo = FALSE}
+summary(val_model2)
+```
+Model shows significant coefficient for all included explanatory variables (p <= 0.05), 83% adjusted R-squared value.
+
+
+####Model 3: Searched linear model using lmStepAIC method, forward direction.
+```{r, echo = FALSE}
+summary(val_model3)
+```
+Model shows insignificant coefficient for all included explanatory variables (p <= 0.05), 80% adjusted R-squared value.
+
+####Select optimal model:
+```{r, echo = FALSE}
+val_model.select <- summary(val_model2)
+```
+Of the three tested models, model 2 is selected as it has the highest adjusted R-squared value with significant explanatory variables (p <= 0.05).
+
+
+###6. Regression Analysis:
+The coefficients for the selected model suggest that (when holding all other explanatory variables constant), an increase in 'wt' results in a decrease in 'mpg', an increase in 'qsec' results in an increase in 'mpg', and finally, cars with manual transmissions ('am' = 1) provide an increase in 'mpg'.
+
+```{r, echo = FALSE}
+data_model.diag <- data.frame(type = row.names(mtcars), 
+  wt = data_mtcars$wt, 
+  am = data_mtcars$am,
+  qsec = data_mtcars$qsec,
+  actual = data_mtcars$mpg,
+  fitted = predict(val_model2, data_mtcars),
+  residual = val_model.select$residuals)
+  
+data_model.diag <- melt(data_model.diag, id.vars = c("type", "actual", "residual")) 
+```
+
+Figure 4 suggest that the selected model provides a good fit to actual 'mpg' data. Figure 5 shows fitted residuals which are randomly scattered with no particular pattern.
+
+
+###7. Conclusion:
+The selected model suggests that a cars weight, quarter-mile time and transmission type are reasonable explanatory variables to use in determining its mile per gallon performance. Cars with a greater weight, lower (quicker) quarter mile time and automatic transmissions achieve less miles per gallon, while cars with less weight, higher (slower) quarter mile times and manual transmission achieve greater miles per gallon.
+
+
+###8. Appendix:
+```{r, echo = FALSE}
+ggpairs(data_mpgtrans, colour = 'am', alpha = 0.5, upper = "blank",
+  axisLabels = "internal",
+  title = "Figure 1: Pair Relationships (Blue: Manual, Red: Automatic)")
+```
+
+```{r, echo = FALSE}
+ggplot(data_mpgtrans, aes(x = mpg, group = am, fill = am)) +
+  geom_histogram(binwidth = 2, col = "black") +
+  ggtitle('Figure 2: MPG Histogram')
+```
+
+```{r, echo = FALSE}
+ggplot(data_mpgtrans, aes(x = am, y = mpg, fill = am)) +
+  geom_boxplot(adjust = 1) + 
+  geom_jitter(size = 2) +
+  ggtitle('Figure 3: MPG per Transmission')
+```
+
+```{r, echo = FALSE}
+ggplot(subset(data_model.diag, variable == "fitted"),aes(y = actual, x = value, color = variable)) + 
+  geom_point() +
+  theme_bw() +
+  theme(legend.position="none") +
+  ggtitle("Figure 4: Selected Model - Fit vs Actuals") +
+  geom_abline(slope = 1, intercept = 0, color = "blue")
+```
+
+```{r, echo = FALSE}
+ggplot(data_model.diag, aes(y = residual, x = value, color = variable)) +
+  geom_point() +
+  facet_wrap(~variable,scales = "free_x") +
+  theme_bw() +
+  theme(legend.position = "none") +
+  ggtitle("Figure 5: Selected Model - Diagnostic Plots") + 
+  scale_x_continuous("variable")
+```
