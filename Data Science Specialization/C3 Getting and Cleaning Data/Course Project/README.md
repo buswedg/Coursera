@@ -1,5 +1,5 @@
 # README
-### Course Project 1: Tidy Data
+### Course Project: Tidy Data
 
 ---------------------
 
