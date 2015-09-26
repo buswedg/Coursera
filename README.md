@@ -1,3 +1,4 @@
+```html
 <table>
   <tr></tr>
   <tr>
@@ -32,8 +33,8 @@
   <tr>
     <td colspan = "3">
     
-      <ul style = "list-style-type:square">  
-        <li style="font-size:20px">Air pollution monitoring data at 332 locations in the US. <a href = "https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2Fspecdata.zip">[Link]</a></li>
+      <ul style = "list-style-type:square;font-size:13px">  
+        <li>Air pollution monitoring data at 332 locations in the US. <a href = "https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2Fspecdata.zip">[Link]</a></li>
         <li>Patient quality of care statistics for over 4,000 US hospitals collected from the Medicare.gov Hospital Compare service. <a href = "https://www.medicare.gov/hospitalcompare/search.html">[link]</a></li>
         <li>Activity recognition data set built from the recordings of 30 subjects performing basic activities and postural transitions while carrying a waist-mounted smartphone with embedded inertial sensors, collected from the UCI Machine Learning Repository. <a href = "http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions">[link]</a></li>
         <li>Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years, collected from the UCI Machine Learning Repository.<a href = " https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">[link]</a></li>
@@ -128,7 +129,7 @@
   <tr>
     <td colspan = "3">
     
-      <ul style = "list-style-type:square">  
+      <ul style = "list-style-type:square;font-size:13px">  
         <li>Food truck profit and population data for the various cities those food trucks operate. <a href = "https://github.com/buswedg/Coursera/raw/master/Machine%20Learning/machine-learning-ex1/ex1/ex1data1.txt">[link]</a></li>
         <li>Housing data for Portland, Oregon, including house price, living area and number of bedrooms. <a href = "https://github.com/buswedg/Coursera/raw/master/Machine%20Learning/machine-learning-ex1/ex1/ex1data2.txt">[link]</a></li>
         <li>Dataset representing 80 students who were/were not admitted into college based on results of two standardized tests. <a href = "https://github.com/buswedg/Coursera/raw/master/Machine%20Learning/machine-learning-ex2/ex2/ex2data1.txt">[link]</a></li>
@@ -145,6 +146,6 @@
     </td>
   </tr>
 </table>
-
+```
 
 
