@@ -4,7 +4,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera \ <a href = "tree/master/Data%20Science%20Specialization/">Data Science Specialization</a></td>
+    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization">Data Science Specialization</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -50,6 +50,43 @@
   </tr>
 </table>
 
+<table>
+  <tr></tr>
+  <tr>
+    <td colspan = "3"><b>Project</b></td>
+  </tr>
+  <tr>
+    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization">Fundamentals of Computing Specialization</a></td>
+  </tr>
+  <tr>
+    <td><b>Author</b></td>
+    <td><b>Expertise</b></td>
+    <td><b>Tool</b></td>
+  </tr>
+  <tr>
+    <td style="vertical-align:top">Darryl Buswell</td>
+    <td style="vertical-align:top">Data Analysis<br>Interactive Programming</td>
+    <td style="vertical-align:top">Python</td>
+  </tr>
+  <tr>
+    <td colspan = "3"><b>Description</b></td>
+  </tr>
+  <tr>
+    <td colspan = "3">
+
+      Introduction to the Python programming language, focus on mathematical and programming techniques, and an introduction to mathematical tools for reasoning about the correctness and efficiency of algorithms.
+
+    </td>
+  </tr>
+  <tr>
+    <td colspan = "3"><b>Dataset</b></td>
+  </tr>
+  <tr>
+    <td colspan = "3">
+ 
+    </td>
+  </tr>
+</table>
 
 <table>
   <tr></tr>
@@ -57,7 +94,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera \ <a href = "tree/master/Machine%20Learning/">Machine Learning</a></td>
+    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning">Machine Learning</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
