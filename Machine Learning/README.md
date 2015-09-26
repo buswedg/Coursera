@@ -1,4 +1,4 @@
-<table>
+<table style="width:100%">
   <tr></tr>
   <tr>
     <td colspan = "3"><b>Project</b></td>
@@ -43,7 +43,7 @@
 
 <br>
 
-<table>
+<table style="width:100%">
   <tr></tr>
   <tr>
     <td colspan = "3"><b>Project</b></td>
@@ -88,7 +88,7 @@
 
 <br>
 
-<table>
+<table style="width:100%">
   <tr></tr>
   <tr>
     <td colspan = "3"><b>Project</b></td>
@@ -132,7 +132,7 @@
 
 <br>
 
-<table>
+<table style="width:100%">
   <tr></tr>
   <tr>
     <td colspan = "3"><b>Project</b></td>
@@ -176,7 +176,7 @@
 
 <br>
 
-<table>
+<table style="width:100%">
   <tr></tr>
   <tr>
     <td colspan = "3"><b>Project</b></td>
@@ -220,7 +220,7 @@
 
 <br>
 
-<table>
+<table style="width:100%">
   <tr></tr>
   <tr>
     <td colspan = "3"><b>Project</b></td>
@@ -264,7 +264,7 @@
 
 <br>
 
-<table>
+<table style="width:100%">
   <tr></tr>
   <tr>
     <td colspan = "3"><b>Project</b></td>
@@ -309,7 +309,7 @@
 
 <br>
 
-<table>
+<table style="width:100%">
   <tr></tr>
   <tr>
     <td colspan = "3"><b>Project</b></td>
