@@ -33,7 +33,7 @@
     <td colspan = "3">
     
       <ul style = "list-style-type:square">  
-        <li>Air pollution monitoring data at 332 locations in the US. <a href = "https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2Fspecdata.zip">[Link]</a></li>
+        <li style="font-size:20px">Air pollution monitoring data at 332 locations in the US. <a href = "https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2Fspecdata.zip">[Link]</a></li>
         <li>Patient quality of care statistics for over 4,000 US hospitals collected from the Medicare.gov Hospital Compare service. <a href = "https://www.medicare.gov/hospitalcompare/search.html">[link]</a></li>
         <li>Activity recognition data set built from the recordings of 30 subjects performing basic activities and postural transitions while carrying a waist-mounted smartphone with embedded inertial sensors, collected from the UCI Machine Learning Repository. <a href = "http://archive.ics.uci.edu/ml/datasets/Smartphone-Based+Recognition+of+Human+Activities+and+Postural+Transitions">[link]</a></li>
         <li>Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years, collected from the UCI Machine Learning Repository.<a href = " https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">[link]</a></li>
@@ -49,6 +49,8 @@
     </td>
   </tr>
 </table>
+
+<br>
 
 <table>
   <tr></tr>
@@ -84,9 +86,13 @@
   <tr>
     <td colspan = "3">
  
+      None
+ 
     </td>
   </tr>
 </table>
+
+<br>
 
 <table>
   <tr></tr>
