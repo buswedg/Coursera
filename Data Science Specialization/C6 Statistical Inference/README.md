@@ -4,7 +4,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Data Science Specialization / C6 Statistical Inference / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C6%20Statistical%20Inference/Course%20Project%201">Course Project 1</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C6%20Statistical%20Inference/Course%20Project%201">Course Project 1</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -46,7 +46,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Data Science Specialization / C6 Statistical Inference / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C6%20Statistical%20Inference/Course%20Project%202">Course Project 2</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C6%20Statistical%20Inference/Course%20Project%202">Course Project 2</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>

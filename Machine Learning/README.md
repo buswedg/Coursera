@@ -4,7 +4,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Machine Learning / <a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%201/">Programming Exercise 1</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%201/">Programming Exercise 1</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -49,7 +49,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Machine Learning / <a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%202/">Programming Exercise 2</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%202/">Programming Exercise 2</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -94,7 +94,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Machine Learning / <a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%203/">Programming Exercise 3</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%203/">Programming Exercise 3</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -138,7 +138,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Machine Learning / <a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%204/">Programming Exercise 4</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%204/">Programming Exercise 4</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -182,7 +182,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Machine Learning / <a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%205/">Programming Exercise 5</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%205/">Programming Exercise 5</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -226,7 +226,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Machine Learning / <a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%206/">Programming Exercise 6</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%206/">Programming Exercise 6</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -270,7 +270,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Machine Learning / <a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%207/">Programming Exercise 7</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%207/">Programming Exercise 7</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -315,7 +315,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Machine Learning / <a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%208/">Programming Exercise 8</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%208/">Programming Exercise 8</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>

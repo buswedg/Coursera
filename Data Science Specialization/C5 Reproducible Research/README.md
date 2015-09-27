@@ -4,7 +4,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Data Science Specialization / C5 Reproducible Research / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%201">Peer Assessment 1</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%201">Peer Assessment 1</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -48,7 +48,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Data Science Specialization / C5 Reproducible Research / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%202">Peer Assessment 2</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%202">Peer Assessment 2</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>

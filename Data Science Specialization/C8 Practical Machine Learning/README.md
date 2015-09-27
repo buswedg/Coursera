@@ -4,7 +4,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / Data Science Specialization / C8 Practical Machine Learning / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C8%20Practical%20Machine%20Learning/Course%20Project">Course Project</a></td>
+    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C8%20Practical%20Machine%20Learning/Course%20Project">Course Project</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
