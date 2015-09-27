@@ -14,7 +14,7 @@
   <tr>
     <td style="vertical-align:top">Darryl Buswell</td>
     <td style="vertical-align:top">Data Products<br>Data Visualization</td>
-    <td style="vertical-align:top">R/R-Studio</td>
+    <td style="vertical-align:top">R/R-Studio<br>Shiny</td>
   </tr>
   <tr>
     <td colspan = "3"><b>Description</b></td>
