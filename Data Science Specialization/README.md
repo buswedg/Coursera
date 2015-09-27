@@ -102,8 +102,8 @@
   </tr>
   <tr>
     <td style="vertical-align:top">Darryl Buswell</td>
-    <td style="vertical-align:top">Data Analysis</td>
     <td style="vertical-align:top">Data Analysis<br>Data Visualization</td>
+    <td style="vertical-align:top">R/R-Studio</td>
   </tr>
   <tr>
     <td colspan = "3"><b>Description</b></td>
