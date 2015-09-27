@@ -4,7 +4,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/">C2 R Programming</a></td>
+    <td colspan = "3">Coursera / Data Science Specialization / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/">C2 R Programming</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -49,7 +49,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C3%20Getting%20and%20Cleaning%20Data/">C3 Getting and Cleaning Data</a></td>
+    <td colspan = "3">Coursera / Data Science Specialization / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C3%20Getting%20and%20Cleaning%20Data/">C3 Getting and Cleaning Data</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -93,7 +93,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/">C4 Exploratory Data Analysis</a></td>
+    <td colspan = "3">Coursera / Data Science Specialization / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/">C4 Exploratory Data Analysis</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -138,7 +138,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/">C5 Reproducible Research</a></td>
+    <td colspan = "3">Coursera / Data Science Specialization / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/">C5 Reproducible Research</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -183,7 +183,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C6%20Statistical%20Inference/">C6 Statistical Inference</a></td>
+    <td colspan = "3">Coursera / Data Science Specialization / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C6%20Statistical%20Inference/">C6 Statistical Inference</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -227,7 +227,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C7%20Regression%20Models/">C7 Regression Models</a></td>
+    <td colspan = "3">Coursera / Data Science Specialization / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C7%20Regression%20Models/">C7 Regression Models</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -271,7 +271,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href = "https://github.com/buswedg/Coursera/tree/master/Data Science Specialization/C8 Practical Machine Learning/">C8 Practical Machine Learning</a></td>
+    <td colspan = "3">Coursera / Data Science Specialization / <a href = "https://github.com/buswedg/Coursera/tree/master/Data Science Specialization/C8 Practical Machine Learning/">C8 Practical Machine Learning</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -315,7 +315,7 @@
     <td colspan = "3"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3">Coursera / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C9%20Developing%20Data%20Products/">C9 Developing Data Products</a></td>
+    <td colspan = "3">Coursera / Data Science Specialization / <a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C9%20Developing%20Data%20Products/">C9 Developing Data Products</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
