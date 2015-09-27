@@ -122,7 +122,7 @@
     <td colspan = "3">
 
       <ul style = "list-style-type:square;font-size:13px">
-        <li>Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years, collected from the UCI Machine Learning Repository.<a href = " https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">[link]</a></li>
+        <li>Measurements of electric power consumption in one household with a one-minute sampling rate over a period of almost 4 years, collected from the UCI Machine Learning Repository. <a href = "https://archive.ics.uci.edu/ml/datasets/Individual+household+electric+power+consumption">[link]</a></li>
         <li>Fine particulate matter (PM2.5) air pollutant data for the US for the period of 1999-2008, collected from the EPA National Emissions Inventory. <a href = "http://www3.epa.gov/ttn/chief/eiinformation.html">[link]</a></li>
       </ul>
 
