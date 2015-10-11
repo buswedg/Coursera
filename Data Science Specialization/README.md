@@ -22,7 +22,7 @@
   <tr>
     <td colspan = "3">
 
-      Collection of R scripts which demonstrate basic concepts on programming in R, reading data into R, accessing R packages, writing R functions, debugging, and organizing and commenting R code.
+      Practical application of statistical computing which includes programming in R, reading data into R, accessing R packages, writing R functions, debugging, profiling R code, and organizing and commenting R code.
 
     </td>
   </tr>
@@ -67,7 +67,7 @@
   <tr>
     <td colspan = "3">
 
-      Sample R script and markdown code for basic concepts on how to collect, clean, and share data using R/Github.
+      Basics of data cleaning and overview of the components of a complete dataset including raw data, processing instructions, codebooks, and processed data.
 
     </td>
   </tr>
@@ -111,7 +111,7 @@
   <tr>
     <td colspan = "3">
 
-      Collection of R scripts which demonstrate visual representations of data using the base, lattice, and ggplot2 plotting systems in R for a number of different multidimensional datasets.
+      Essential exploratory techniques for summarizing data, including how to implement multivariate statistical techniques and use common plotting systems in R to summarize high-dimensional data.
 
     </td>
   </tr>
@@ -156,7 +156,7 @@
   <tr>
     <td colspan = "3">
 
-      R markdown code which integrates live R code into a literate statistical program using knitr and related tools.
+      Focus on literate statistical analysis tools which allow one to publish data analyses in a single document that allows others to easily execute the same analysis to obtain the same results. Includes R markdown code which integrates live R code into a literate statistical program using knitr and related tools.
 
     </td>
   </tr>
@@ -201,7 +201,7 @@
   <tr>
     <td colspan = "3">
 
-      Collection of R scripts which employ fundamentals of statistical inference, including broad theories such as frequentists, Bayesian, and likelihood.
+      Essential statistical inference and how to use this information for making informed choices in analyzing data. Includes a collection of R scripts which employ fundamentals of statistical inference, including broad theories such as frequentists, Bayesian, and likelihood.
 
     </td>
   </tr>
@@ -245,7 +245,7 @@
   <tr>
     <td colspan = "3">
 
-      R script to fit regression models, interpret coefficients, investigate residuals and variability, employ dummy variables and finally, make multivariable adjustment.
+      Regression analysis, least squares and inference using regression models. Special cases of the regression model, ANOVA and ANCOVA are also covered with analysis of dummy variable, multivariable adjustment, residuals and variability.
 
     </td>
   </tr>
@@ -289,7 +289,7 @@
   <tr>
     <td colspan = "3">
 
-      R scripts which apply multiple machine learning tools and evaluated predictors on real data.
+      Complete process of building prediction functions including data collection, feature creation, algorithms, and evaluation.R scripts which apply multiple machine learning tools and evaluated predictors on real data.
 
     </td>
   </tr>
@@ -333,7 +333,7 @@
   <tr>
     <td colspan = "3">
 
-      A simple Shiny web application and R package for data products.
+      A simple, yet scalable, web application built using Shiny, R packages, and interactive graphics, with a focus on automating statistical inference tasks on a dataset.
 
     </td>
   </tr>
