@@ -62,7 +62,7 @@
     <td style="vertical-align:top">Darryl Buswell</td>
     <td style="vertical-align:top">Exploratory Analysis</td>
     <td style="vertical-align:top">R/R-Studio</td>
-    <td style="vertical-align:top">Environment</td>
+    <td style="vertical-align:top">N/A</td>
   </tr>
   <tr>
     <td colspan = "4"><b>Description</b></td>
