@@ -1,10 +1,10 @@
 <table style="width:100%">
   <tr></tr>
   <tr>
-    <td colspan = "3"><b>Project</b></td>
+    <td colspan = "4"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a></td>
+    <td colspan = "4"><a href = "https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -19,10 +19,10 @@
     <td style="vertical-align:top">Energy<br>Environment<br>Generic<br>Healthcare<br>Information Technology<br>Transportation</td>
   </tr>
   <tr>
-    <td colspan = "3"><b>Description</b></td>
+    <td colspan = "4"><b>Description</b></td>
   </tr>
   <tr>
-    <td colspan = "3">
+    <td colspan = "4">
 
       Concepts and tools needed throughout the entire data science pipeline, from asking the right kinds of questions to making inferences and publishing results.<br><br>
 Includes:<br>
@@ -40,10 +40,10 @@ Includes:<br>
     </td>
   </tr>
   <tr>
-    <td colspan = "3"><b>Dataset</b></td>
+    <td colspan = "4"><b>Dataset</b></td>
   </tr>
   <tr>
-    <td colspan = "3">
+    <td colspan = "4">
 
       <ul style = "list-style-type:square;font-size:13px">
         <li>Air pollution monitoring data at 332 locations in the US. <a href = "https://d396qusza40orc.cloudfront.net/rprog%2Fdata%2Fspecdata.zip">[Link]</a></li>
@@ -68,10 +68,10 @@ Includes:<br>
 <table style="width:100%">
   <tr></tr>
   <tr>
-    <td colspan = "3"><b>Project</b></td>
+    <td colspan = "4"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a></td>
+    <td colspan = "4"><a href = "https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -86,10 +86,10 @@ Includes:<br>
     <td style="vertical-align:top">Health Care, Entertainment, Information Technology</td>
   </tr>
   <tr>
-    <td colspan = "3"><b>Description</b></td>
+    <td colspan = "4"><b>Description</b></td>
   </tr>
   <tr>
-    <td colspan = "3">
+    <td colspan = "4">
 
       Introduction to Python, with a focus on mathematical and programming techniques, and mathematical tools for reasoning about the correctness and efficiency of algorithms.<br><br>
 Includes:<br>
@@ -103,10 +103,10 @@ Includes:<br>
     </td>
   </tr>
   <tr>
-    <td colspan = "3"><b>Dataset</b></td>
+    <td colspan = "4"><b>Dataset</b></td>
   </tr>
   <tr>
-    <td colspan = "3">
+    <td colspan = "4">
 
       N/A
 
@@ -119,10 +119,10 @@ Includes:<br>
 <table style="width:100%">
   <tr></tr>
   <tr>
-    <td colspan = "3"><b>Project</b></td>
+    <td colspan = "4"><b>Project</b></td>
   </tr>
   <tr>
-    <td colspan = "3"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/">Machine Learning</a></td>
+    <td colspan = "4"><a href = "https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/">Machine Learning</a></td>
   </tr>
   <tr>
     <td><b>Author</b></td>
@@ -137,10 +137,10 @@ Includes:<br>
     <td style="vertical-align:top">Education<br>Environment<br>Food, Beverages and Tobacco<br>Housing<br>Information Technology<br>Manufacturing</td>
   </tr>
   <tr>
-    <td colspan = "3"><b>Description</b></td>
+    <td colspan = "4"><b>Description</b></td>
   </tr>
   <tr>
-    <td colspan = "3">
+    <td colspan = "4">
 
       Machine learning, datamining, and statistical pattern recognition utilizing GNU Octave. Including, 1) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks); 2) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning); and 3) Best practices in machine learning (bias/variance theory and innovation process in machine learning and AI).<br><br>
 Includes:<br>
@@ -162,10 +162,10 @@ Includes:<br>
     </td>
   </tr>
   <tr>
-    <td colspan = "3"><b>Dataset</b></td>
+    <td colspan = "4"><b>Dataset</b></td>
   </tr>
   <tr>
-    <td colspan = "3">
+    <td colspan = "4">
 
       <ul style = "list-style-type:square;font-size:13px">
         <li>Food truck profit and population data for the various cities those food trucks operate. <a href = "https://github.com/buswedg/Coursera/blob/master/Machine%20Learning/Programming%20Exercise%201/ex1/ex1data1.txt">[link]</a></li>
