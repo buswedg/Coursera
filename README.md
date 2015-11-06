@@ -14,7 +14,7 @@
   </tr>
   <tr>
     <td style="vertical-align:top">Darryl Buswell</td>
-    <td style="vertical-align:top">Exploratory Analysis<br>Data Application<br>Statistical Inference<br>Machine Learning</td>
+    <td style="vertical-align:top">Data Applications<br>Exploratory Analysis<br>Machine Learning<br>Statistical Inference</td>
     <td style="vertical-align:top">R/R-Studio<br>Shiny</td>
     <td style="vertical-align:top">Energy<br>Environment<br>Generic<br>Healthcare<br>Information Technology<br>Transportation</td>
   </tr>
