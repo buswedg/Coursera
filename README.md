@@ -83,7 +83,7 @@ Includes:<br>
     <td style="vertical-align:top">Darryl Buswell</td>
     <td style="vertical-align:top">Data Application, Machine Learning</td>
     <td style="vertical-align:top">Python</td>
-    <td style="vertical-align:top">Health Care, Entertainment, Information Technology</td>
+    <td style="vertical-align:top">Health Care<br>Entertainment<br>Information Technology</td>
   </tr>
   <tr>
     <td colspan = "4"><b>Description</b></td>
