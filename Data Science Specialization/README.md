@@ -360,7 +360,7 @@ Includes:<br>
   </tr>
   <tr>
     <td style="vertical-align:top">Darryl Buswell</td>
-    <td style="vertical-align:top">Data Application</td>
+    <td style="vertical-align:top">Data Applications</td>
     <td style="vertical-align:top">R/R-Studio<br>Shiny</td>
     <td style="vertical-align:top">Information Technology</td>
   </tr>
