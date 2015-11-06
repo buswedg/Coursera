@@ -1,4 +1,4 @@
-<table style="width:100%">
+<table style = "width:100%">
   <tr></tr>
   <tr>
     <td colspan = "4"><b>Project</b></td>
@@ -65,7 +65,7 @@ Includes:<br>
 
 <br>
 
-<table style="width:100%">
+<table style = "width:100%">
   <tr></tr>
   <tr>
     <td colspan = "4"><b>Project</b></td>
@@ -116,7 +116,7 @@ Includes:<br>
 
 <br>
 
-<table style="width:100%">
+<table style = "width:100%">
   <tr></tr>
   <tr>
     <td colspan = "4"><b>Project</b></td>
