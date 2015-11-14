@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C5%20Algorithmic%20Thinking%20(Part%201)/">C5 Algorithmic Thinking (Part 1)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C5%20Algorithmic%20Thinking%20(Part%201)/Algorithmic%20Thinking%20(Part%201)/">Algorithmic Thinking (Part 1)</a> / 
+<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C5%20Algorithmic%20Thinking%20(Part%201)/">C5 Algorithmic Thinking (Part 1)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C5%20Algorithmic%20Thinking%20(Part%201)/A1%20Analysis%20of%20Citation%20Graphs/">A1 Analysis of Citation Graphs</a> / 
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Python
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C5%20Algorithmic%20Thinking%20(Part%201)/">C5 Algorithmic Thinking (Part 1)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C5%20Algorithmic%20Thinking%20(Part%201)/Algorithmic%20Thinking%20(Part%201)/">Algorithmic Thinking (Part 1)</a> / 
+<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C5%20Algorithmic%20Thinking%20(Part%201)/">C5 Algorithmic Thinking (Part 1)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C5%20Algorithmic%20Thinking%20(Part%201)/A2%20Analysis%20of%20a%20Computer%20Network/">A2 Analysis of a Computer Network</a> / 
 </td>
 </tr>
 <tr>
