@@ -1,10 +1,10 @@
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%201/">Programming Exercise 1</a>
 </td>
 </tr>
@@ -33,8 +33,10 @@ Food, Beverages and Tobacco<br>Housing
 </tr>
 <tr>
 <td colspan="4">
+<ul>
 <li>Implementation of linear regression analysis with one variable (city population) to predict profits for a food truck which is to operate in different cities.</li>
 <li>Linear regression analysis with multiple variables (including living area size and number of bedrooms) to predict the house prices in Portland, Oregon.</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -42,8 +44,10 @@ Food, Beverages and Tobacco<br>Housing
 </tr>
 <tr>
 <td colspan="4">
+<ul>
 <li>Food truck profit and population data for the various cities those food trucks operate.</li>
 <li>Housing data for Portland, Oregon, including house price, living area and number of bedrooms.</li>
+</ul>
 </td>
 </tr>
 </table>
@@ -53,10 +57,10 @@ Food, Beverages and Tobacco<br>Housing
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%202/">Programming Exercise 2</a>
 </td>
 </tr>
@@ -85,8 +89,10 @@ Education<br>Manufacturing
 </tr>
 <tr>
 <td colspan="4">
+<ul>
 <li>Implementation of logistic regression analysis to predict the chance a student would be admitted into a University based on their results from two standardized tests.</li>
 <li>Predict whether microchips from a fabrication plant would pass quality assurance standards based on results from two tests.</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -94,8 +100,10 @@ Education<br>Manufacturing
 </tr>
 <tr>
 <td colspan="4">
+<ul>
 <li>Dataset representing 80 students who were/were not admitted into college based on results of two standardized tests.</li>
 <li>Quality assurance data for microchips from a fabrication plant.</li>
+</ul>
 </td>
 </tr>
 </table>
@@ -105,10 +113,10 @@ Education<br>Manufacturing
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%203/">Programming Exercise 3</a>
 </td>
 </tr>
@@ -155,10 +163,10 @@ Information Technology
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%204/">Programming Exercise 4</a>
 </td>
 </tr>
@@ -205,10 +213,10 @@ Information Technology
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%205/">Programming Exercise 5</a>
 </td>
 </tr>
@@ -255,10 +263,10 @@ Environment
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%206/">Programming Exercise 6</a>
 </td>
 </tr>
@@ -305,10 +313,10 @@ Information Technology
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%207/">Programming Exercise 7</a>
 </td>
 </tr>
@@ -337,8 +345,10 @@ Information Technology
 </tr>
 <tr>
 <td colspan="4">
+<ul>
 <li>Implementation of K-means clustering algorithm to compress the size of an image by reducing its number of colors.</li>
 <li>Principle component analysis (PCA) to perform dimensionality reduction on a dataset of 5,000 face images.</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -346,8 +356,10 @@ Information Technology
 </tr>
 <tr>
 <td colspan="4">
+<ul>
 <li>Image of a small bird.</li>
 <li>5,000 face images.</li>
+</ul>
 </td>
 </tr>
 </table>
@@ -357,10 +369,10 @@ Information Technology
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%208/">Programming Exercise 8</a>
 </td>
 </tr>
@@ -389,8 +401,10 @@ Information Technology
 </tr>
 <tr>
 <td colspan="4">
+<ul>
 <li>Anomaly detection algorithm, applied in order to detect failing servers on a network.</li>
 <li>Utilization of collaborative filtering in order to build a recommender system for movies.</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -398,8 +412,10 @@ Information Technology
 </tr>
 <tr>
 <td colspan="4">
+<ul>
 <li>Server performance data, including throughput (mb/s) and latency (ms) for 307 servers.</li>
 <li>Dataset of movie ratings for 1,682 movies, ranked by 943 users on a scale from 1 to 5. <a href="http://grouplens.org/datasets/movielens/" target="_blank">[link]</a></li>
+</ul>
 </td>
 </tr>
 </table>

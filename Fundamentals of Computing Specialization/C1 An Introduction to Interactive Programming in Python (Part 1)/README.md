@@ -1,10 +1,10 @@
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C1%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%201)/Mini-project%201/">Mini-project 1</a>
 </td>
 </tr>
@@ -51,10 +51,10 @@ Entertainment
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C1%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%201)/Mini-project%202/">Mini-project 2</a>
 </td>
 </tr>
@@ -101,10 +101,10 @@ Entertainment
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C1%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%201)/Mini-project%203/">Mini-project 3</a>
 </td>
 </tr>
@@ -151,10 +151,10 @@ Entertainment
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C1%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%201)/Mini-project%204/">Mini-project 4</a>
 </td>
 </tr>

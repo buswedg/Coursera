@@ -1,10 +1,10 @@
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%201/">Peer Assessment 1</a>
 </td>
 </tr>
@@ -51,10 +51,10 @@ Healthcare
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%202/">Peer Assessment 2</a>
 </td>
 </tr>

@@ -1,10 +1,10 @@
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/Programming%20Assignment%201/">Programming Assignment 1</a>
 </td>
 </tr>
@@ -51,10 +51,10 @@ Environment
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/Programming%20Assignment%202/">Programming Assignment 2</a>
 </td>
 </tr>
@@ -101,10 +101,10 @@ R/R-Studio
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/Programming%20Assignment%203/">Programming Assignment 3</a>
 </td>
 </tr>

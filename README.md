@@ -1,10 +1,10 @@
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a>
 </td>
 </tr>
@@ -74,10 +74,10 @@ Energy<br>Environment<br>Health Care<br>Healthcare<br>Information Technology<br>
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a>
 </td>
 </tr>
@@ -132,10 +132,10 @@ Entertainment<br>Information Technology
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/">Machine Learning</a>
 </td>
 </tr>

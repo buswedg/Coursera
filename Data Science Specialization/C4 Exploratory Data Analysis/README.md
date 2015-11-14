@@ -1,10 +1,10 @@
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/Course%20Project%201/">Course Project 1</a>
 </td>
 </tr>
@@ -51,10 +51,10 @@ Energy
 <table>
 <tr></tr>
 <tr>
-<td colspan = "4"><b>Project</b></td>
+<td colspan="4"><b>Project</b></td>
 </tr>
 <tr>
-<td colspan = "4">
+<td colspan="4">
 <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/Course%20Project%202/">Course Project 2</a>
 </td>
 </tr>
