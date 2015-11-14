@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C9%20Developing%20Data%20Products/">C9 Developing Data Products</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C9%20Developing%20Data%20Products/Course%20Project/">Course Project</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C9%20Developing%20Data%20Products/Course%20Project/">Course Project</a>
 </td>
 </tr>
 <tr>

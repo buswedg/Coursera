@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C2%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%202)/">C2 An Introduction to Interactive Programming in Python (Part 2)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C2%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%202)/Mini-project%205/">Mini-project 5</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C2%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%202)/Mini-project%205/">Mini-project 5</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C2%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%202)/">C2 An Introduction to Interactive Programming in Python (Part 2)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C2%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%202)/Mini-project%206/">Mini-project 6</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C2%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%202)/Mini-project%206/">Mini-project 6</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C2%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%202)/">C2 An Introduction to Interactive Programming in Python (Part 2)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C2%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%202)/Mini-project%207.8/">Mini-project 7.8</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C2%20An%20Introduction%20to%20Interactive%20Programming%20in%20Python%20(Part%202)/Mini-project%207.8/">Mini-project 7.8</a>
 </td>
 </tr>
 <tr>

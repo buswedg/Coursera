@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/">C2 R Programming</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/">C2 R Programming</a>
 </td>
 </tr>
 <tr>
@@ -64,7 +64,7 @@ Environment<br>Health Care
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C3%20Getting%20and%20Cleaning%20Data/">C3 Getting and Cleaning Data</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C3%20Getting%20and%20Cleaning%20Data/">C3 Getting and Cleaning Data</a>
 </td>
 </tr>
 <tr>
@@ -116,7 +116,7 @@ Health Care
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/">C4 Exploratory Data Analysis</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/">C4 Exploratory Data Analysis</a>
 </td>
 </tr>
 <tr>
@@ -174,7 +174,7 @@ Energy<br>Environment
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/">C5 Reproducible Research</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/">C5 Reproducible Research</a>
 </td>
 </tr>
 <tr>
@@ -232,7 +232,7 @@ Environment<br>Healthcare
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C6%20Statistical%20Inference/">C6 Statistical Inference</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C6%20Statistical%20Inference/">C6 Statistical Inference</a>
 </td>
 </tr>
 <tr>
@@ -289,7 +289,7 @@ Health Care
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C7%20Regression%20Models/">C7 Regression Models</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C7%20Regression%20Models/">C7 Regression Models</a>
 </td>
 </tr>
 <tr>
@@ -341,7 +341,7 @@ Transportation
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C8%20Practical%20Machine%20Learning/">C8 Practical Machine Learning</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C8%20Practical%20Machine%20Learning/">C8 Practical Machine Learning</a>
 </td>
 </tr>
 <tr>
@@ -393,7 +393,7 @@ Health Care
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C9%20Developing%20Data%20Products/">C9 Developing Data Products</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C9%20Developing%20Data%20Products/">C9 Developing Data Products</a>
 </td>
 </tr>
 <tr>

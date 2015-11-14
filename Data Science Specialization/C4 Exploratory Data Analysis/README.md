@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/">C4 Exploratory Data Analysis</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/Course%20Project%201/">Course Project 1</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/Course%20Project%201/">Course Project 1</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Energy
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/">C4 Exploratory Data Analysis</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/Course%20Project%202/">Course Project 2</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C4%20Exploratory%20Data%20Analysis/Course%20Project%202/">Course Project 2</a>
 </td>
 </tr>
 <tr>

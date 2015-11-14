@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/">C2 R Programming</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/Programming%20Assignment%201/">Programming Assignment 1</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/Programming%20Assignment%201/">Programming Assignment 1</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Environment
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/">C2 R Programming</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/Programming%20Assignment%202/">Programming Assignment 2</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/Programming%20Assignment%202/">Programming Assignment 2</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ R/R-Studio
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/">C2 R Programming</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/Programming%20Assignment%203/">Programming Assignment 3</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C2%20R%20Programming/Programming%20Assignment%203/">Programming Assignment 3</a>
 </td>
 </tr>
 <tr>

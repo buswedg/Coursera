@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/">C3 Principles of Computing (Part 1)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/Mini-project%201/">Mini-project 1</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/Mini-project%201/">Mini-project 1</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/">C3 Principles of Computing (Part 1)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/Mini-project%202/">Mini-project 2</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/Mini-project%202/">Mini-project 2</a>
 </td>
 </tr>
 <tr>
@@ -105,7 +105,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/">C3 Principles of Computing (Part 1)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/Mini-project%203/">Mini-project 3</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/Mini-project%203/">Mini-project 3</a>
 </td>
 </tr>
 <tr>
@@ -155,7 +155,7 @@ Entertainment
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/">Fundamentals of Computing Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/">C3 Principles of Computing (Part 1)</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/Mini-project%204/">Mini-project 4</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Fundamentals%20of%20Computing%20Specialization/C3%20Principles%20of%20Computing%20(Part%201)/Mini-project%204/">Mini-project 4</a>
 </td>
 </tr>
 <tr>

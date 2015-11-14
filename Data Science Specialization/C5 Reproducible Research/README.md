@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/">C5 Reproducible Research</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%201/">Peer Assessment 1</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%201/">Peer Assessment 1</a>
 </td>
 </tr>
 <tr>
@@ -55,7 +55,7 @@ Healthcare
 </tr>
 <tr>
 <td colspan = "4">
-<a href="https://github.com/buswedg/Coursera/">Coursera</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/">Data Science Specialization</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/">C5 Reproducible Research</a> / <a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%202/">Peer Assessment 2</a> / 
+<a href="https://github.com/buswedg/Coursera/tree/master/Data%20Science%20Specialization/C5%20Reproducible%20Research/Peer%20Assessment%202/">Peer Assessment 2</a>
 </td>
 </tr>
 <tr>
