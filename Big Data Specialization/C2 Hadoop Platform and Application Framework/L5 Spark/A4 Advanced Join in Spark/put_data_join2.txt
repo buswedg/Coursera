@@ -1,0 +1,8 @@
+hdfs dfs -put /home/cloudera/join2_gennumA.txt /user/cloudera/input
+hdfs dfs -put /home/cloudera/join2_gennumB.txt /user/cloudera/input
+hdfs dfs -put /home/cloudera/join2_gennumC.txt /user/cloudera/input
+hdfs dfs -put /home/cloudera/join2_genchanA.txt /user/cloudera/input
+hdfs dfs -put /home/cloudera/join2_genchanB.txt /user/cloudera/input
+hdfs dfs -put /home/cloudera/join2_genchanC.txt /user/cloudera/input
+hdfs dfs -put /home/cloudera/join2_gennum.txt /user/cloudera/input
+hdfs dfs -put /home/cloudera/join2_genchan.txt /user/cloudera/input
