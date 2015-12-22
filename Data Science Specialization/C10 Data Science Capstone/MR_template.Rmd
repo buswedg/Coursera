@@ -1,0 +1,556 @@
+---
+output:
+  html_document:
+    keep_md: yes
+  pdf_document:
+    keep_tex: yes
+---
+```{r global_options, include = FALSE}
+knitr::opts_chunk$set(fig.width = 12, fig.height = 8, fig.path = 'figure/',
+                      echo = TRUE, warning = FALSE, message = FALSE)
+```
+#Data Science Capstone
+###Milestone Report: MR_template
+
+
+###1. Introduction
+This document presents the results of the Milestone Report for the Coursera course: Data Science Capstone. This assessment required the student to apply data science techniques in the area of natural language processing by building a predictive text application. The application is to be capable of scanning a stream of text as it is typed by a user and suggest possibilities for the next word to be appended to the input stream. The application is to be demonstrated via the Shiny platform, which will allow users to type an input text stream and receive a text predictions within a web based environment.
+
+The goal of the Milestone Report is to demonstrate that the student has gotten used to working with the data and that they are on track to create the predictive text mining application. This report mirrors the structure of the Milestone Report grading rubic:
+- Demonstrate that you've downloaded the data and have successfully loaded it in.
+- Create a basic report of summary statistics about the data sets.
+- Report any interesting findings that you amassed so far.
+- Get feedback on your plans for creating a prediction algorithm and Shiny app.
+
+
+###2. Data
+This assessment makes use of raw text data from three sources (news headlines, blog entries, and user tweets). Datasets were made available in German, Russian and English, however only the English datasets were utilized as part of this project.
+
+* Dataset: [training data](https://d396qusza40orc.cloudfront.net/dsscapstone/dataset/Coursera-SwiftKey.zip)
+
+
+###3. Loading Packages/ Data
+The first step is to read each of the English datasets into R.
+```{r}
+data_twitter.raw <- readLines("data/en_US/en_US.twitter.txt", encoding = "UTF-8")
+data_news.raw <- readLines("data/en_US/en_US.news.txt", encoding = "UTF-8")
+data_blogs.raw <- readLines("data/en_US/en_US.blogs.txt", encoding = "UTF-8")
+data.raw <- c(data_twitter.raw, data_news.raw, data_blogs.raw)
+```
+
+
+###4. Preliminary Analysis
+Some preliminary analysis is conducted on the raw datasets, based on the first Quiz Set. The below table shows a sumamry of each of the datasets which were read into R above.
+```{r}
+temp <- matrix(c("en_US.twitter.txt",
+                 "en_US.news.txt",
+                 "en_US.blogs.txt",
+                 round(file.info("data/en_US/en_US.twitter.txt")$size/1024^2, 2),
+                 round(file.info("data/en_US/en_US.news.txt")$size/1024^2, 2),
+                 round(file.info("data/en_US/en_US.blogs.txt")$size/1024^2, 2),
+                 length(data_twitter.raw),
+                 length(data_news.raw),
+                 length(data_blogs.raw),
+                 max(nchar(data_twitter.raw)),
+                 max(nchar(data_news.raw)),
+                 max(nchar(data_blogs.raw))),
+               ncol = 4, 
+               byrow = FALSE)
+
+colnames(temp) <- c("File (name)",
+                    "Size (mb)",
+                    "Lines (no.)",
+                    "Longest Line (chars)")
+
+for(package in c("knitr")) {
+  if(!require(package, character.only = TRUE)) {
+    install.packages(package)
+    library(package, character.only = TRUE)
+  }
+}
+
+rm(package)
+
+kable(temp, format = "markdown")
+
+rm(temp)
+```
+
+The en_US.blogs.txt file is how many megabytes?
+```{r}
+file.info("data/en_US/en_US.blogs.txt")$size/1024^2
+```
+
+The en_US.twitter.txt has how many lines of text?
+```{r}
+length(data_twitter.raw)
+```
+
+What is the length of the longest line seen in any of the three en_US data sets? 
+```{r}
+max(nchar(data_twitter.raw))
+```
+
+In the en_US twitter data set, if you divide the number of lines where the word "love" (all lowercase) occurs by the number of lines the word "hate" (all lowercase) occurs, about what do you get?
+```{r}
+val_love <- sum(grepl(pattern = "love", x = data_twitter.raw))
+val_hate <- sum(grepl(pattern = "hate", x = data_twitter.raw))
+val_love / val_hate
+
+rm(val_love, val_hate)
+```
+
+The one tweet in the en_US twitter data set that matches the word "biostats" says what?
+```{r}
+data_twitter.raw[grep(pattern = "biostat", x = data_twitter.raw)]
+```
+
+How many tweets have the exact characters "A computer once beat me at chess, but it was no match for me at kickboxing". (I.e. the line matches those characters exactly.) 
+```{r}
+sum(grepl(pattern = "A computer once beat me at chess, but it was no match for me at kickboxing", x = data_twitter.raw))
+```
+
+
+###5. Pre-process the Data
+Due to the scale of each dataset, a sample of 5,000 lines is taken prior to any pre-processing.
+```{r}
+set.seed(1)
+data_twitter.smpl <- data_twitter.raw[sample(1:length(data_twitter.raw), length(data_twitter.raw) * 0.05)]
+data_news.smpl <- data_news.raw[sample(1:length(data_news.raw), length(data_news.raw) * 0.05)]
+data_blogs.smpl <- data_blogs.raw[sample(1:length(data_blogs.raw), length(data_blogs.raw) * 0.05)]
+data.smpl <- c(data_twitter.smpl, data_news.smpl, data_blogs.smpl)
+
+data.train <- data.smpl
+#data.train <- data.raw
+
+rm(data_twitter.raw, data_news.raw, data_blogs.raw)
+rm(data_twitter.smpl, data_news.smpl, data_blogs.smpl)
+```
+
+A number of transformations are made as part of the pre-processing routine. The table delow summarizes each transformation and the order in which they are applied.
+```{r}
+temp <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+                 "Convert from UTF-8 to ASCII",
+                 "Remove retweet entities",
+                 "Remove @people",
+                 "Remove http addressess",
+                 "Remove punctuation", 
+                 "Remove digits", 
+                 "Remove English stopwords (e.g. to, a, is)",
+                 "Remove profanity",
+                 "Convert text to lowercase",
+                 "Strip all whitespace"),
+               ncol = 2, 
+               byrow = FALSE)
+
+colnames(temp) <- c("Order",
+                    "Transformation")
+
+for(package in c("knitr")) {
+  if(!require(package, character.only = TRUE)) {
+    install.packages(package)
+    library(package, character.only = TRUE)
+  }
+}
+
+rm(package)
+
+kable(temp, format = "markdown")
+
+rm(temp)
+```
+
+```{r}
+for(package in c("tm", "NLP", "stringr")) {
+  if(!require(package, character.only = TRUE)) {
+    install.packages(package)
+    library(package, character.only = TRUE)
+  }
+}
+
+rm(package)
+
+corpus.train <- Corpus(VectorSource(data.train))
+
+profanityFileName = "data/profanity.txt"
+if (!file.exists(profanityFileName)) download.file(url = "https://pattern-for-python.googlecode.com/svn-history/r20/trunk/pattern/vector/wordlists/profanity.txt",
+                                                   destfile = profanityFileName)
+profanityWords = str_trim(as.character(read.table(profanityFileName, 
+                                                  sep = ",",
+                                                  stringsAsFactors = FALSE)))
+
+cleanCorpus <- function(corpus){
+  toASCII <- content_transformer(function(x) iconv(x, from = "UTF-8", to = "ASCII", sub = ""))
+  toNull <- content_transformer(function(x, pattern) gsub(pattern, "", x))
+  
+  x <- corpus
+  x <- tm_map(x, toASCII)
+  x <- tm_map(x, toNull, "(RT|via)((?:\\b\\W*@\\w+)+)")
+  x <- tm_map(x, toNull, "@\\w+")
+  x <- tm_map(x, toNull, "http\\w+")
+  x <- tm_map(x, removePunctuation)
+  x <- tm_map(x, removeNumbers)
+  #x <- tm_map(x, removeWords, stopwords("english"))
+  x <- tm_map(x, removeWords, profanityWords)
+  x <- tm_map(x, content_transformer(tolower))
+  x <- tm_map(x, stripWhitespace)
+  return(x)
+}
+
+corpus.train <- cleanCorpus(corpus.train)
+
+rm(cleanCorpus, profanityFileName, profanityWords)
+```
+
+A Term Document Matrix is then created which consists of each document as columns and distinct words as rows. A seperate Term Document Matrix is created for three possible N-gram sequences:
+1) Unigrams: Single N-gram (e.g. I / really / love / Swiftkey)
+2) Bigrams: Two joining N-grams (e.g. I really / love Swiftkey)
+3) Trigrams: Three joining N-grams (e.g. I really love / really love Swiftkey)
+4) Quadgrams: Four joing N-grams (e.g. I really love Switftkey)
+
+In order to create the Term Document Matrix, we start by applying a word tokenizer to specify how many words are needed for that specific N-gram. We then create a method that takes a corpus and the N-gram size that iterates through each of the sampled datasets and applies the tokenizer so we end up with a corpus of the same amount of documents with the tokenizer applied.
+```{r}
+for(package in c("tm", "NLP", "RWeka", "slam")) {
+  if(!require(package, character.only = TRUE)) {
+    install.packages(package)
+    library(package, character.only = TRUE)
+  }
+}
+
+rm(package)
+
+gc()
+
+unigramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 1, max = 1))
+tdm_unigram <- TermDocumentMatrix(corpus.train, 
+                                 control = list(tokenize = unigramTokenizer))
+save(tdm_unigram, file = "data/tdm_unigram.RData")
+
+unifreq <- rowapply_simple_triplet_matrix(tdm_unigram, sum)
+df_uniwordfreq <- data.frame(ngram = names(unifreq), 
+                             freq = unifreq,
+                             row.names = NULL,
+                             stringsAsFactors = FALSE)
+df_uniwordfreq <- df_uniwordfreq[with(df_uniwordfreq, order(-freq, ngram)), ]
+save(df_uniwordfreq, file = "data/df_uniwordfreq.RData")
+
+rm(unigramTokenizer, unifreq)
+
+
+bigramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 2, max = 2))
+tdm_bigram <- TermDocumentMatrix(corpus.train, 
+                                control = list(tokenize = bigramTokenizer))
+save(tdm_bigram, file = "data/tdm_bigram.RData")
+
+bifreq <- rowapply_simple_triplet_matrix(tdm_bigram, sum)
+df_biwordfreq <- data.frame(ngram = names(bifreq), 
+                            freq = bifreq,
+                            row.names = NULL, 
+                            stringsAsFactors = FALSE)
+df_biwordfreq <- df_biwordfreq[with(df_biwordfreq, order(-freq, ngram)), ]
+save(df_biwordfreq, file = "data/df_biwordfreq.RData")
+
+rm(bigramTokenizer, bifreq)
+
+
+trigramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 3, max = 3))
+tdm_trigram <- TermDocumentMatrix(corpus.train, 
+                                 control = list(tokenize = trigramTokenizer))
+save(tdm_trigram, file = "data/tdm_trigram.RData")
+
+trifreq <- rowapply_simple_triplet_matrix(tdm_trigram, sum)
+df_triwordfreq <- data.frame(ngram = names(trifreq), 
+                             freq = trifreq,
+                             row.names = NULL, 
+                             stringsAsFactors = FALSE)
+df_triwordfreq <- df_triwordfreq[with(df_triwordfreq, order(-freq, ngram)), ]
+save(df_triwordfreq, file = "data/df_triwordfreq.RData")
+
+rm(trigramTokenizer, trifreq)
+
+
+quadgramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 4, max = 4))
+tdm_quadgram <- TermDocumentMatrix(corpus.train, 
+                                  control = list(tokenize = quadgramTokenizer))
+save(tdm_quadgram, file = "data/tdm_quadgram.RData")
+
+quadfreq <- rowapply_simple_triplet_matrix(tdm_quadgram, sum)
+df_quadwordfreq <- data.frame(ngram = names(quadfreq), 
+                              freq = quadfreq,
+                              row.names = NULL, 
+                              stringsAsFactors = FALSE)
+df_quadwordfreq <- df_quadwordfreq[with(df_quadwordfreq, order(-freq, ngram)), ]
+save(df_quadwordfreq, file = "data/df_quadwordfreq.RData")
+
+rm(quadgramTokenizer, quadfreq)
+```
+
+
+###6. Exploratory Analysis
+Finally, as part of the exploratory analysis routine, attention is drawn to word frequency and correlations. A word cloud is also prepared to better visualize each N-gram frequency's.
+
+The plots and table extracts below show the most common word frequencies for each N-gram:
+```{r}
+for(package in c("ggplot2", "dplyr")) {
+  if(!require(package, character.only = TRUE)) {
+    install.packages(package)
+    library(package, character.only = TRUE)
+  }
+}
+
+rm(package)
+
+df_uniwordfreq %>% 
+    filter(freq > 1000) %>%
+    ggplot(aes(ngram, freq)) +
+      geom_bar(stat = "identity") +
+      ggtitle("Unigrams (Frequency > 1000)") +
+      xlab("Unigrams") + ylab("Frequency") +
+      theme(axis.text.x = element_text(angle = 45))
+
+paste("Unigrams - Top 10 highest frequencies")
+head(df_uniwordfreq, 10)
+
+df_biwordfreq %>% 
+    filter(freq > 100) %>%
+    ggplot(aes(ngram, freq)) +
+      geom_bar(stat = "identity") +
+      ggtitle("Bigrams (Frequency > 100)") +
+      xlab("Bigrams") + ylab("Frequency") +
+      theme(axis.text.x = element_text(angle = 45))
+
+paste("Bigrams - Top 10 highest frequencies")
+head(df_biwordfreq, 10)
+
+df_triwordfreq %>% 
+    filter(freq > 15) %>%
+    ggplot(aes(ngram, freq)) +
+      geom_bar(stat = "identity") +
+      ggtitle("Trigrams (Frequency > 10)") +
+      xlab("Trigrams") + ylab("Frequency") +
+      theme(axis.text.x = element_text(angle = 45))
+
+paste("Trigrams - Top 10 highest frequencies")
+head(df_triwordfreq, 10)
+
+df_quadwordfreq %>% 
+    filter(freq > 3) %>%
+    ggplot(aes(ngram, freq)) +
+      geom_bar(stat = "identity") +
+      ggtitle("Quadgrams (Frequency > 10)") +
+      xlab("Quadgrams") + ylab("Frequency") +
+      theme(axis.text.x = element_text(angle = 45))
+
+paste("Quadgrams - Top 10 highest frequencies")
+head(df_quadwordfreq, 10)
+```
+
+A visual representation of unigram correlations is shown below:
+```{r}
+source("http://bioconductor.org/biocLite.R")
+biocLite()
+
+unigramTokenizer <- function(x) NGramTokenizer(x, Weka_control(min = 1, max = 1))
+dtm_unigram <- DocumentTermMatrix(corpus.train, 
+                                 control = list(tokenize = unigramTokenizer,
+                                                stopwords = TRUE,
+                                                removeNumbers = TRUE,
+                                                removePunctuation = TRUE))
+
+sorted_terms <- sort(col_sums(dtm_unigram), decreasing = TRUE)
+
+plot(unigramDTM,
+     terms = names(sorted_terms[1:15]),
+     corThreshold = 0.07, 
+     weighting = FALSE)
+```
+
+Finally, a word cloud is generated for each N-gram combination.
+```{r}
+for(package in c("wordcloud", "RColorBrewer")) {
+  if(!require(package, character.only = TRUE)) {
+    install.packages(package)
+    library(package, character.only = TRUE)
+  }
+}
+
+rm(package)
+
+wordcloud(df_uniwordfreq$ngram, 
+          df_uniwordfreq$freq,
+          min.freq = 250,
+          colors = brewer.pal(8, "Dark2"))
+
+wordcloud(df_biwordfreq$ngram, 
+          df_biwordfreq$freq,
+          min.freq = 50,
+          colors = brewer.pal(8, "Dark2"))
+
+wordcloud(df_triwordfreq$ngram, 
+          df_triwordfreq$freq,
+          min.freq = 10,
+          colors = brewer.pal(8, "Dark2"))
+
+wordcloud(df_quadwordfreq$ngram, 
+          df_quadwordfreq$freq,
+          min.freq = 10,
+          colors = brewer.pal(8, "Dark2"))
+```
+
+###7. Key Findings
+There are long computation times associated with reading in and transforming the datasets. I imagine the the long computation time is due to the large file size of each dataset. As such, it was vital to create a data sample for text mining and tokenization. However, this workaround decreases the accuracy for the subsequent predictions.
+
+Analysis of some of the higher N-gram frequencies suggests that there is scope to futher improve the cleaning routine. For example, "incorporated item c pp" appeared as one of the top 10 most frequent quadgrams. In order to further improve on the applied cleaning routine, I will investigate applying some additional transformations including stemming words to their root form and correcting common spelling mistakes.
+
+I debated whether to remove stopwords from the corpus. At this stage, I will progress with building the predictive text model without including stopwords, but may vary this depending on the model's performance.
+
+
+###8. Next steps
+Once satisfied with the cleaning routine, the next steps include building the predictive text model and implementing the model via the Shiny Platform. Based on what I have read thus far, my initial efforts will be put towards implementing an N-gram probabilitstic model (Maximum Likelihood Estimation) based on the Stupid Backoff alogithm. Such a model should be fairly easy to implement and should bring advantages of speed and scalability. If I have time, I will also investigate implementing a smoothing algorithm such as Kneser-Ney for improved prediction accuracy.
+
+
+####9. N-gram Model
+An N-gram model is a probabilistic language model for predicting the next token from a provided sequence of N-grams. Being a probabilistic model, the model outputs a probability distribution of likely words (rather than a single prediction) where the probability of that word is determined by the relative frequency of the N-gram sequence in the corpus of training data.
+
+The Stupid Backoff (Brants et al 2007)  algorithm provides one possible option to implement a N-gram probability distribution over a set of N-gram orders. This algorithm checks if highest-order N-gram occurs within the training data, and if not, it 'backs-off' to a lower-order N-gram model. The Stupid Backoff algorith is commonly used within web based application since this algorithm is designed to deliever fast predictions for large datasets.
+
+A common issue with the N-gram model however, is the balance weight between infrequent and frequent N-grams within the training data. That is, N-grams not seen within the training data will be given a probability of zero. It is therefore desirable to smooth the probability distributions in order to produce more accurate probabilities.
+
+The Kneser-Ney provides provides one possible option to improve the N-gram probability distribution by making use of absolute discounting by subtracting a fixed value from the probability's lower order terms in order to omit N-grams with lower frequencies. The result is a greater probability weight to higher-order N-grams which at a high level, can be seen to provide a greater amount of context than lower-order N-grams.
+
+
+####10. Implementing Stupid Back-off
+The code below shows a basic implementation of the Stupid Backoff algorithm.
+```{r}
+for(package in c("tm", "NLP")) {
+  if(!require(package, character.only = TRUE)) {
+    install.packages(package)
+    library(package, character.only = TRUE)
+  }
+}
+
+load(file = "data/df_uniwordfreq.RData")
+load(file = "data/df_biwordfreq.RData")
+load(file = "data/df_triwordfreq.RData")
+load(file = "data/df_quadwordfreq.RData")
+
+predict <- function(input) {
+  x <- input
+  x <- removePunctuation(x)
+  x <- removeNumbers(x)
+  #x <- removeWords(x, stopwords("english"))
+  x <- tolower(x)
+  x <- stripWhitespace(x)
+  x <- unlist(strsplit(x , " "))
+  
+  for(i in min(length(x), 3):1) {
+    y <- NA
+    match <- NA
+    ngram <- paste(tail(x, i), collapse = " ")
+    print(paste0("ngram: ", ngram))
+    ngram <- paste0("^", ngram, " ")
+    if(i == 3) {
+      print("i == 3")
+      match <- grep(ngram, df_quadwordfreq$ngram)[1]
+      y <- df_quadwordfreq[match, 1]
+      } else if(i == 2) { 
+      print("i == 2")
+      match <- grep(ngram, df_triwordfreq$ngram)[1]
+      y <- df_triwordfreq[match, 1]
+      } else if(i == 1) { 
+      print("i == 1")
+      match <- grep(ngram, df_biwordfreq$ngram)[1]
+      y <- df_biwordfreq[match, 1]
+    }
+    if(!is.na(y)) {
+      return(gsub(ngram, "", y))
+      break
+    }
+  }
+  
+  print("no match")
+  return(paste0(df_uniwordfreq[1, 1]))
+}
+
+
+quiz11 <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+quiz12 <- c("The guy in front of me just bought a pound of bacon, a bouquet, and a case of",
+            "You're the reason why I smile everyday. Can you follow me please? It would mean the",
+            "Hey sunshine, can you follow me and make me the",
+            "Very early observations on the Bills game: Offense still struggling but the",
+            "Go on a romantic date at the",
+            "Well I'm pretty sure my granny has some old bagpipes in her garage I'll dust them off and be on my",
+            "Ohhhhh #PointBreak is on tomorrow. Love that film and haven't seen it in quite some",
+            "After the ice bucket challenge Louis will push his long wet hair out of his eyes with his little",
+            "Be grateful for the good times and keep the faith during the",
+            "If this isn't the cutest thing you've ever seen, then you must be")
+quiz13 <- c("beer",
+            "world",
+            "happiest",
+            "defense",
+            "beach",
+            "way",
+            "time",
+            "fingers",
+            "bad",
+            "insane")
+
+df_quiz1 <- data.frame(quiz11, quiz12, quiz13, quiz14 = character(10), stringsAsFactors = FALSE)
+
+rm(quiz11, quiz12, quiz13)
+
+i <- 0
+j <- 0
+for(row in 1:nrow(df_quiz1)) {
+  i <- i + 1
+  q <- df_quiz1[i, 2]
+  a <- df_quiz1[i, 3]
+  p <- predict(q)
+  df_quiz1[i, 4] <- p
+  if(p == a) {j <- j + 1}
+}
+print(paste0("score: ", j/10))
+
+rm(i, j, q, a, p)
+
+
+quiz21 <- c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+quiz22 <- c("When you breathe, I want to be the air for you. I'll be there for you, I'd live and I'd",
+            "Guy at my table's wife got up to go to the bathroom and I asked about dessert and he started telling me about his",
+            "I'd give anything to see arctic monkeys this",
+            "Talking to your mom has the same effect as a hug and helps reduce your",
+            "When you were in Holland you were like 1 inch away from me but you hadn't time to take a",
+            "I'd just like all of these questions answered, a presentation of evidence, and a jury to settle the",
+            "I can't deal with unsymetrical things. I can't even hold an uneven number of bags of groceries in each",
+            "Every inch of you is perfect from the bottom to the",
+            "I'm thankful my childhood was filled with imagination and bruises from playing",
+            "I like how the same people are in almost all of Adam Sandler's")
+quiz23 <- c("die",
+            "marital",
+            "weekend",
+            "stress",
+            "picture",
+            "matter",
+            "hand",
+            "top",
+            "outside",
+            "movies")
+
+df_quiz2 <- data.frame(quiz21, quiz22, quiz23, quiz24 = character(10), stringsAsFactors = FALSE)
+
+rm(quiz21, quiz22, quiz23)
+
+i <- 0
+j <- 0
+for(row in 1:nrow(df_quiz2)) {
+  i <- i + 1
+  q <- df_quiz2[i, 2]
+  a <- df_quiz2[i, 3]
+  p <- predict(q)
+  df_quiz2[i, 4] <- p
+  if(p == a) {j <- j + 1}
+}
+print(paste0("score: ", j/10))
+
+rm(i, j, q, a, p)
+```
