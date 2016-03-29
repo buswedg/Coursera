@@ -1,0 +1,21 @@
+cd /usr/lib/hadoop-mapreduce/
+
+hadoop jar hadoop-mapreduce-examples.jar wordcount
+
+echo "Hello world in HDFS" > /home/cloudera/testfile1
+
+echo "Hadoop word count example in HDFS" > /home/cloudera/testfile2
+
+hdfs dfs -mkdir /user/cloudera/input
+
+hdfs dfs -put /home/cloudera/testfile1 /user/cloudera/input
+
+hdfs dfs -put /home/cloudera/testfile2 /user/cloudera/input
+
+hadoop jar hadoop-mapreduce-examples.jar wordcount /user/cloudera/input /user/cloudera/output
+
+hdfs dfs -ls /user/cloudera/output
+
+hdfs dfs -cat /user/cloudera/output/part-r-00000
+
+hdfs dfs -get /user/cloudera/output/part-r-00000 /home/cloudera/wordcount.txt

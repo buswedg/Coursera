@@ -5,7 +5,7 @@
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%201/">Programming Exercise 1</a>
+<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/PE1%20Linear%20Regression/">PE1 Linear Regression</a>
 </td>
 </tr>
 <tr>
@@ -61,7 +61,7 @@ Food, Beverages and Tobacco<br>Housing
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%202/">Programming Exercise 2</a>
+<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/PE2%20Logistic%20Regression/">PE2 Logistic Regression</a>
 </td>
 </tr>
 <tr>
@@ -117,7 +117,7 @@ Education<br>Manufacturing
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%203/">Programming Exercise 3</a>
+<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/PE3%20Multi-class%20Classification%20and%20Neural%20Networks/">PE3 Multi-class Classification and Neural Networks</a>
 </td>
 </tr>
 <tr>
@@ -167,7 +167,7 @@ Information Technology
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%204/">Programming Exercise 4</a>
+<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/PE4%20Neural%20Networks%20Learning/">PE4 Neural Networks Learning</a>
 </td>
 </tr>
 <tr>
@@ -217,7 +217,7 @@ Information Technology
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%205/">Programming Exercise 5</a>
+<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/PE5%20Regularized%20Linear%20Regression%20and%20Bias%20vs%20Variance/">PE5 Regularized Linear Regression and Bias vs Variance</a>
 </td>
 </tr>
 <tr>
@@ -267,7 +267,7 @@ Environment
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%206/">Programming Exercise 6</a>
+<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/PE6%20Support%20Vector%20Machines/">PE6 Support Vector Machines</a>
 </td>
 </tr>
 <tr>
@@ -317,7 +317,7 @@ Information Technology
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%207/">Programming Exercise 7</a>
+<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/PE7%20K-Means%20Clustering%20and%20Principal%20Component%20Analysis/">PE7 K-Means Clustering and Principal Component Analysis</a>
 </td>
 </tr>
 <tr>
@@ -373,7 +373,7 @@ Information Technology
 </tr>
 <tr>
 <td colspan="4">
-<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/Programming%20Exercise%208/">Programming Exercise 8</a>
+<a href="https://github.com/buswedg/Coursera/tree/master/Machine%20Learning/PE8%20Anomaly%20Detection%20and%20Recommender%20Systems/">PE8 Anomaly Detection and Recommender Systems</a>
 </td>
 </tr>
 <tr>
